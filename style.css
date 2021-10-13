@@ -1,3 +1,22 @@
+:root {
+  --green: hsl(160deg, 100%, 30%);
+
+  --gold-light: hsl(45deg, 100%, 50%);
+  --gold-dark: hsl(45deg, 100%, 40%);
+
+  --white: hsl(0deg, 0%, 100%);
+  --grey-light: hsl(0deg, 0%, 60%);
+  --grey-medium: hsl(0deg, 0%, 40%);
+  --grey-dark: hsl(0deg, 0%, 30%);
+  --grey-very-dark: hsl(0deg, 0%, 10%);
+  --black: hsl(0deg, 0%, 0%);
+
+  --font-normal: 1rem;
+  --font-large: 1.25rem;
+  --font-xl:  1.5rem;
+  --font-xxl: 2rem;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -7,6 +26,55 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background: var(--grey-light);
 }
 
 /* Add styles here! */
+
+
+.max-width-wrapper {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: var(--grey-light);
+}
+
+header {
+  background-color: var(--white);
+  padding: 64px 16px 32px 16px;
+  border-bottom: solid 4px var(--grey-medium);
+}
+
+header p {
+  max-width: 375px;
+}
+
+.intro-chunk {
+  font-size: var(--font-large);
+}
+
+.intro-chunk strong {
+  color: var(--green);
+}
+
+.title {
+  font-size: var(--font-xxl);
+}
+
+.card {
+  background-color: var(--white);
+  margin-top: 64px;
+  padding: 8px 16px 16px 16px;
+}
+
+.indented-heading {
+  background-color: var(--gold-light);
+  font-size: var(--font-xl);
+  border-bottom: solid 4px var(--gold-dark);
+  padding: 16px 16px 16px 32px;
+  width: fit-content;
+  margin-left: -32px;
+}
